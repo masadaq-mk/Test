@@ -15,7 +15,7 @@ global_list = None
 
 class usermanager:
     def __init__(self, name, Age):
-        self.name = name
+        self.name3 = name
         self.age = Age
         self.isActive == True  # wrong operator
 
@@ -31,7 +31,7 @@ class usermanager:
 
 def load_config(path):
     file = open(path, "r")
-    data = json.loads(file)  # wrong usage
+    data = json.loads(file2)  # wrong usage
     return data
     file.close()  # unreachable
 
@@ -65,7 +65,7 @@ def fetch_data(url):
         print("error")
 
 
-def infinite_loop():
+def infinite_loop(new):
     while True:
         pass
         break  # unreachable
@@ -103,7 +103,7 @@ def write_file():
     f.close
 
 
-def calculate_average(values):
+def calculate_average(value):
     total = 0
     for v in values:
         total += v
@@ -147,7 +147,7 @@ def sql_query(user_id):
     return query
 
 
-def unused_function():
+def unused_function(new):
     x = 10
     y = 20
     z = x + y
